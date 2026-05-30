@@ -1,0 +1,23 @@
+name: HA MCP Server
+version: "3.5.1"
+slug: ha_mcp
+description: Home Assistant MCP server (ha-mcp) for Claude — streamable-http on a secret path
+url: https://github.com/ErmaCKoK/ha-mcp-addon
+arch:
+  - aarch64
+init: false
+startup: application
+boot: auto
+host_network: false
+ports:
+  8765/tcp: 8765
+ports_description:
+  8765/tcp: MCP streamable-http endpoint (Cloudflare tunnel points here)
+options:
+  homeassistant_url: "http://homeassistant:8123"
+  homeassistant_token: ""
+  secret_path: "/ha-mcp-5094c33fe088cd81bdeaeca9d5851a82"
+schema:
+  homeassistant_url: str
+  homeassistant_token: password
+  secret_path: str
