@@ -16,7 +16,7 @@ ports_description:
 options:
   homeassistant_url: "http://homeassistant:8123"
   homeassistant_token: ""
-  secret_path: "/ha-mcp-5094c33fe088cd81bdeaeca9d5851a82"
+  secret_path: "/CHANGE-ME-to-a-random-path"
 schema:
   homeassistant_url: str
   homeassistant_token: password
